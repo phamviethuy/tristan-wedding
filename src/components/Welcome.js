@@ -50,7 +50,7 @@ const StyledWrapper = styled.section`
           width: 0.6rem;
           height: 0.6rem;
           .num {
-            font-size: 0.4rem;
+            font-size: 0.3rem;
             .txt {
               font-size: 0.1rem;
             }
@@ -60,7 +60,7 @@ const StyledWrapper = styled.section`
     }
 
     .cele {
-      color: #212121;
+      color: #ffffff;
       position: absolute;
       display: flex;
       justify-content: center;
@@ -87,6 +87,11 @@ const StyledWrapper = styled.section`
         transform: translate3d(-50%, -50%, 0);
         font-size: 0.8rem;
         padding: 0.1rem 0.3rem;
+      }
+        @media screen and (max-width: 768px) {
+            .txt {
+              font-size: 0.4rem;
+            }
       }
     }
   }
