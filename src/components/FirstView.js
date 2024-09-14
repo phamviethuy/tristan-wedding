@@ -23,16 +23,16 @@ const StyledWrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    width: 100%;
-    max-width: 2200px;
-    margin: auto;
-    height: 100vh;
-    background-image: url('first.blood.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 1800px;
+  background-color: #fff;
+  padding: 0.3rem 0;
+  background: url('first.blood.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
     &:after {
       position: absolute;
       content: '';
