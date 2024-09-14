@@ -105,7 +105,7 @@ const StyledPopup = styled.section`
     }
   }
 `
-export default function Celebrate({ closeDan, dan = '超长回忆蛋' }) {
+export default function Celebrate({ closeDan, dan = 'Trứng trí nhớ siêu dài' }) {
   const el = useRef(null)
   // Create reference to store the Typed instance itself
   const typed = useRef(null)
@@ -114,8 +114,8 @@ export default function Celebrate({ closeDan, dan = '超长回忆蛋' }) {
       // elRef refers to the <span> rendered below
       typed.current = new Typed(el.current, {
         strings: [
-          `<p>太棒了！！！</p>
-          <p>找到了一个彩蛋：<strong>${dan}</strong>，截图保存本界面，集齐<strong>两个彩蛋</strong>，即可找新郎🤵🏻（微信:<strong>yanggc_2013</strong>）兑换小两口精心准备的小礼品一件！</p>
+          `<p>Tuyệt vời！！！</p>
+          <p>找Tôi tìm thấy một quả trứng Phục sinh:<strong>${dan}</strong>，chụp ảnh màn hình và lưu giao diện này, thu thập<strong>两个彩蛋</strong>，即可找新郎🤵🏻（微信:<strong>yanggc_2013</strong>）兑换小两口精心准备的小礼品一件！</p>
           <p>免费且包邮，仅备10件，送完为止。</p>`
         ],
         typeSpeed: 30,
@@ -135,9 +135,9 @@ export default function Celebrate({ closeDan, dan = '超长回忆蛋' }) {
     <StyledPopup>
       <Confetti gravity={0.2} numberOfPieces={300} />
       <div className="tip">
-        <h3 className="title">恭喜🎉🎉🎉</h3>
+        <h3 className="title">Xin chúc mừng🎉🎉🎉</h3>
         <div className="content" ref={el}></div>
-        <div className="ps">* 活动最终解释权归新郎所有</div>
+        <div className="ps">* Quyền giải thích cuối cùng về sự việc thuộc về chú rể</div>
         <div className="close" onClick={closeDan}>
           <MdClose color="#fff" />
         </div>

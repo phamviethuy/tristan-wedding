@@ -31,13 +31,11 @@ const StyledWrapper = styled.section`
         background-position: center;
         overflow: hidden;
         &.boy {
-          background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w4.png?x-oss-process=image/resize,w_400'),
+          background-image: url('chandung02.jpg'),
             url(${FrameImage});
-          background-size: 75%, 100%;
-          background-position-y: 5px;
         }
         &.girl {
-          background-image: url('https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/w1.png?x-oss-process=image/resize,w_400'),
+          background-image: url('chandung01.jpg'),
             url(${FrameImage});
         }
         img {
@@ -46,7 +44,7 @@ const StyledWrapper = styled.section`
         }
       }
       .name {
-        font-family: 'SP-F';
+        font-family: "Playwrite CU", cursive;
         font-size: 0.4rem;
         padding: 0.2rem 0;
         margin: 0.2rem 0;
@@ -60,12 +58,12 @@ const StyledWrapper = styled.section`
 `
 const tips = {
   h: {
-    m: '右面',
-    w: '左面'
+    m: 'phải',
+    w: 'trái'
   },
   v: {
-    m: '下面',
-    w: '上面'
+    m: 'Bên dưới',
+    w: 'Bên trên'
   }
 }
 export default function Couple({ popupDan }) {
@@ -82,24 +80,24 @@ export default function Couple({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="新郎 · 新娘" />
+      <Title title="Chú rể · Cô dâu" />
       <div className="cp">
         <div className="profile">
           <div className="pic boy" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
-          <div className="name">杨国春🤵🏻</div>
+          <div className="name">Phạm Viết Huy🤵🏻</div>
           <div className="intro">
-            我有三样东西不可或缺：水，空气，以及{tips[pos].m}那个女人
+          Tôi có ba thứ không thể thiếu: nước, không khí và người phụ nữ bên {tips[pos].m}
           </div>
         </div>
         <div className="profile">
           <div className="pic girl" onDoubleClick={handleDC}>
             <img src={FrameImage} alt="man" />
           </div>
-          <div className="name">朱聪👰🏻</div>
+          <div className="name">Nguyễn Thị Phương👰🏻</div>
           <div className="intro">
-            我有三样东西不可或缺：水，空气，以及{tips[pos].w}那个男人
+            Tôi có ba thứ không thể thiếu: nước, không khí và người đàn ông bên {tips[pos].w}
           </div>
         </div>
       </div>

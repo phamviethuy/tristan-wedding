@@ -92,20 +92,29 @@ const StyledWrapper = styled.section`
   }
 `
 
-const weddings = Array.from(Array(29).keys())
-  .map((v, idx) => `w${idx + 1}`)
-  .filter(
-    (p) => !['w2', 'w6', 'w7', 'w13', 'w19', 'w26', 'w21', 'w10'].includes(p)
-  )
-const dailys = Array.from(Array(37).keys())
-  .map((v, idx) => `d${idx + 1}`)
-  .filter((p) => !['d7', 'd12', 'd15', 'd20', 'd21'].includes(p))
-// console.log({ weddings })
+const weddings = ["DRE04100.jpg", "DRE04112.jpg", "DRE04120.jpg", "DRE04128.jpg",
+    "DRE04139.jpg", "DRE04143.jpg", "DRE04154.jpg", "DRE04159.jpg",
+    "DRE04173.jpg", "DRE04183.jpg", "DRE04191.jpg", "DRE04198.jpg",
+    "DRE04204.jpg", "DRE04216.jpg", "DRE04232.jpg", "DRE04245.jpg",
+    "DRE04252.jpg", "DRE04267.jpg", "DRE04278.jpg", "DRE04281.jpg",
+    "DRE04285.jpg", "DRE04294.jpg", "DRE04315.jpg", "DRE04321.jpg",
+    "DRE04334.jpg", "DRE04363.jpg", "DRE04375.jpg", "DRE04441.jpg",
+    "DRE04495.jpg", "DRE04508.jpg", "DRE04569.jpg", "DRE04579.jpg",
+    "DRE04585.jpg", "DRE04599.jpg"]
+const dailys = ["DRE04100.jpg", "DRE04112.jpg", "DRE04120.jpg", "DRE04128.jpg",
+  "DRE04139.jpg", "DRE04143.jpg", "DRE04154.jpg", "DRE04159.jpg",
+  "DRE04173.jpg", "DRE04183.jpg", "DRE04191.jpg", "DRE04198.jpg",
+  "DRE04204.jpg", "DRE04216.jpg", "DRE04232.jpg", "DRE04245.jpg",
+  "DRE04252.jpg", "DRE04267.jpg", "DRE04278.jpg", "DRE04281.jpg",
+  "DRE04285.jpg", "DRE04294.jpg", "DRE04315.jpg", "DRE04321.jpg",
+  "DRE04334.jpg", "DRE04363.jpg", "DRE04375.jpg", "DRE04441.jpg",
+  "DRE04495.jpg", "DRE04508.jpg", "DRE04569.jpg", "DRE04579.jpg",
+  "DRE04585.jpg", "DRE04599.jpg"]
 const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const viewCount = useRef(0)
   const title = {
-    wedding: '羊二与聪聪的婚纱照',
-    dailys: '羊二与聪聪的日常'
+    wedding: 'Ảnh cưới Huy Phạm và Phương Nguyễn',
+    dailys: 'Cuộc sống hàng ngày của chúng tôi'
   }
   const [reiniting, setReiniting] = useState(false)
   // console.log({ photos })
@@ -119,7 +128,7 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
   const handleLgClose = () => {
     // console.log('lg close')
     if (viewCount.current >= 20) {
-      popupDan('超长回忆')
+      popupDan('Ký ức siêu dài')
     }
   }
   const handleLgOpen = () => {
@@ -135,7 +144,7 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
     }
   }, [photos])
   return reiniting ? (
-    <Loading>初始化...</Loading>
+    <Loading>Đang tải...</Loading>
   ) : (
     <LightGallery
       onAfterClose={handleLgClose}
@@ -152,10 +161,10 @@ const GalleryInstance = ({ popupDan, cate = 'wedding', photos = [] }) => {
             key={photo}
             className="picture"
             data-sub-html={`<h4>${title[cate]}</h4>`}
-            data-src={`https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_1200`}
+            data-src={`${photo}`}
           >
             <img
-              src={`https://g-store.oss-cn-beijing.aliyuncs.com/works/wedding/${photo}.png?x-oss-process=image/resize,w_300`}
+              src={`${photo}`}
             />
           </div>
         )
@@ -174,7 +183,7 @@ export default function Gallery({ popupDan }) {
   }
   return (
     <StyledWrapper>
-      <Title title="回忆·图库" />
+      <Title title="Thư viện ảnh" />
       <div className="btns">
         <div className="group">
           <button
@@ -182,14 +191,14 @@ export default function Gallery({ popupDan }) {
             data-cate="wedding"
             onClick={handleCateClick}
           >
-            婚纱
+            Ảnh cưới
           </button>
           <button
             className={`btn ${cate == 'dailys' ? 'curr' : ''}`}
             data-cate="dailys"
             onClick={handleCateClick}
           >
-            日常
+            Ảnh chúng mình
           </button>
         </div>
       </div>

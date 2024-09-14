@@ -80,7 +80,7 @@ const StyledWrapper = styled.section`
       }
       .txt {
         white-space: nowrap;
-        font-family: 'SP-F';
+        font-family: "Playwrite CU", cursive;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -102,31 +102,31 @@ export default function Welcome() {
   }, [])
   return (
     <StyledWrapper>
-      <Title title="欢迎参加" />
+      <Title title="Chào mừng bạn đến tham dự" />
       <div className="wrapper">
         <div className="countdown">
           <div className="box">
             <span className="num day">{value.day}</span>
-            <span className="txt">天</span>
+            <span className="txt">Ngày</span>
           </div>
           <div className="box">
             <span className="num hour">{value.hour}</span>
-            <span className="txt">时</span>
+            <span className="txt">Giờ</span>
           </div>
           <div className="box">
             <span className="num min">{value.minute}</span>
-            <span className="txt">分</span>
+            <span className="txt">Phút</span>
           </div>
           <div className="box">
             <span className="num second">{value.second}</span>
-            <span className="txt">秒</span>
+            <span className="txt">Giây</span>
           </div>
         </div>
         <div className="cele">
           <div className="flowers">
             <Confetti gravity={0.2} numberOfPieces={150} />
           </div>
-          <div className="txt">我们结婚啦!</div>
+          <div className="txt">Chúng tôi đã bên nhau</div>
         </div>
       </div>
     </StyledWrapper>
