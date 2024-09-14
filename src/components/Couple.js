@@ -50,7 +50,7 @@ const StyledWrapper = styled.section`
         margin: 0.2rem 0;
       }
       .intro {
-        font-size: 0.12rem;
+        font-size: 0.18rem;
         white-space: nowrap;
       }
     }
@@ -62,8 +62,8 @@ const tips = {
     w: 'trái'
   },
   v: {
-    m: 'Bên dưới',
-    w: 'Bên trên'
+    m: 'dưới',
+    w: 'trên'
   }
 }
 export default function Couple({ popupDan }) {
