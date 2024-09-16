@@ -109,34 +109,18 @@ const items = [
   {
     title: 'Tìm hiểu：Hương vị tình yêu',
     datetime: '2020.12.20',
-    desc: `<span>Chúng tôi cứ thế và chính thức yêu nhau</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
+    desc: `<span>Chua, cay, ngọt, bùi ,... không thiếu một vị nào</span>
+    <span>Chúng tôi đã dắt tay nhau đi qua rất nhiều cung bậc cảm xúc vui có, buồn có, bực tức có,
+     hạnh phúc có...</span>
   `,
     picture: `anh02.jpg`
   },
   {
     title: 'Ở bên nhau：Khoảnh khắc bình yên',
-    datetime: '2020.06.06',
-    desc: `<span>Chúng tôi chính thức về chung 1 nhà。
-      <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>
-    <span>。。。。。。。。。。。。。。。。。。。。。。</span>`,
+    datetime: '2024.09.03',
+    desc: `
+    <span>Chính vì những điều đó đã làm chúng tôi hiểu nhau hơn và quyết định cùng nhau mở một cánh cửa mới mang tên gia đình</span>
+    <span>Chúng tôi chính thức về chung 1 nhà。`,
     picture: `anh03.jpg`
   }
 ]
